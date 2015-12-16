@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 11, Part 2</title>
+    <link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+    <link href="css/black.css" rel="stylesheet">
+    <link href="css/my-styles.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/search-script.js"></script>
+    <script src="js/detail-script.js"></script>
+    <script src="js/reports-script.js"></script>
+</head>
+
+<body>
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <div data-role="page" id="search-page">
+
+        <header data-role=header>
+            <h2>Directory</h2>
+        </header>
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-split-icon="arrow-r" data-filter-placeholder="Search..." id="list"></ul>
+            <h4>Welcome to the Directory!</h4>
+            <p>This is a sample app that demonstrates how to build applications with jQUery Mobile.</p>
+        </div>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <div data-role="page" id="emp-details">
+        <header data-role="header">
+            <a href="#search-page" class="ui-btn ui-corner-all ui-btn-inline 
+ui-btn-icon-left ui-icon-back ui-btn-b">Back</a>
+            <h1>Employee Details</h1>
+            <a href="#search-page" class="ui-btn ui-corner-all ui-btn-inline 
+ui-btn-icon-right ui-icon-search ui-btn-b">Search</a>
+        </header>
+        <div data-role="content">
+            <div id="details">
+            </div>
+
+            <ul data-role="listview" data-split-icon="arrow-r" data-inset="true" id="details-list">
+            </ul>
+
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <div data-role="page" id="subordinates">
+        <header data-role="header">
+            <a href="#search-page" class="ui-btn ui-corner-all ui-btn-inline 
+ui-btn-icon-left ui-icon-back ui-btn-b">Back</a>
+            <h1>Direct Reports</h1>
+            <a href="#search-page" class="ui-btn ui-corner-all ui-btn-inline 
+ui-btn-icon-right ui-icon-search ui-btn-b">Search</a>
+        </header>
+        <div data-role="content">
+            <ul data-role="listview" data-split-icon="arrow-r" id="reports-list"></ul>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
